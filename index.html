@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Felipe Cardoso</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="shortcut icon" href="assets/blog.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Blog Responsivo</h1>
+      <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <img src="assets/css.jpeg" alt="imagem css">
+  <p id="home">No programa <b>3035 Teach</b>, estou aprofundando meus conhecimentos em programação avançada, incluindo <b>HTML, CSS, JavaScript e React.</b> Uma das tarefas que realizei foi criar um layout responsivo para uma página de blog, utilizando Flexbox para organizar os itens de cada postagem e Grid para estruturar a grade de postagens na página inicial. Esse exercício me permitiu aplicar conceitos de design responsivo e aprimorar minhas habilidades na criação de interfaces modernas. 💻🌟</p>
+  <section id="blog">
+    <div class="blog-container">
+      <!-- Post 1 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>A importância do design responsivo para o sucesso de um site</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>No mundo digital de hoje, um design responsivo é crucial para garantir que seu site funcione perfeitamente em qualquer dispositivo...</p>
+        </div>
+        <div class="post-additional-content">
+          <p>De desktops a smartphones, a capacidade de se adaptar automaticamente a diferentes tamanhos de tela melhora a experiência do usuário e contribui para um melhor desempenho no SEO. Ao adotar práticas como Flexbox e Grid, conseguimos criar layouts mais flexíveis e funcionais, que respondem bem a qualquer situação. Nesse post, vamos explorar como o design responsivo pode transformar seu projeto web.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    
+      <!-- Post 2 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>Flexbox vs. Grid: Qual escolher para o seu layout?</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>Flexbox e Grid são duas poderosas ferramentas para construir layouts modernos e responsivos...</p>
+        </div>
+        <div class="post-additional-content">
+          <p>Cada uma tem suas características e casos de uso específicos, e entender quando usar cada uma pode fazer toda a diferença no seu design. Enquanto o Flexbox é ótimo para alinhar itens em uma direção (horizontal ou vertical), o Grid permite uma organização mais complexa, criando layouts em duas dimensões. Neste post, vamos comparar as duas abordagens e mostrar quando escolher cada uma.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    
+      <!-- Post 3 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>Como otimizar o tempo de carregamento de um site responsivo</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>Um dos maiores desafios ao criar sites responsivos é garantir que eles carreguem rapidamente em todas as plataformas....</p>
+        </div>
+        <div class="post-additional-content">
+          <p>O desempenho é crucial, especialmente em dispositivos móveis, onde a velocidade de carregamento pode afetar diretamente a experiência do usuário. Neste post, vamos abordar técnicas para otimizar imagens, minimizar arquivos e aproveitar o cache, garantindo que seu site responsivo seja rápido e eficiente, sem comprometer o design.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    
+      <!-- Post 4 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>Como usar Media Queries para design responsivo</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>As Media Queries são fundamentais no design responsivo. Elas ajudam a ajustar o layout do site conforme as características do dispositivo do usuário...</p>
+        </div>
+        <div class="post-additional-content">
+          <p>Você pode usar Media Queries para ajustar o layout com base em parâmetros como largura de tela, resolução e orientação. Isso permite criar diferentes versões de um site, otimizadas para dispositivos como desktops, tablets e smartphones. Neste post, vamos aprender como utilizar as Media Queries de forma eficaz para criar um design adaptável e responsivo.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    
+      <!-- Post 5 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>Design móvel primeiro: Por que é importante?</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>O design móvel primeiro é uma abordagem que coloca as necessidades dos dispositivos móveis no centro do processo de design...</p>
+        </div>
+        <div class="post-additional-content">
+          <p>Com o aumento do uso de smartphones, o design móvel primeiro se tornou uma prática importante para garantir que seu site seja totalmente funcional em telas menores. Essa abordagem garante que você priorize a experiência do usuário móvel, oferecendo um design otimizado que se adapta perfeitamente aos dispositivos móveis. Neste post, discutiremos as vantagens dessa abordagem e como implementá-la em seus projetos.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    
+      <!-- Post 6 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>Como melhorar a acessibilidade em sites responsivos</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>A acessibilidade é um aspecto crucial do design responsivo, garantindo que todos os usuários, independentemente de suas habilidades, possam acessar seu conteúdo...</p>
+        </div>
+        <div class="post-additional-content">
+          <p>Ao construir sites responsivos, é essencial considerar a acessibilidade para todos os dispositivos e usuários. Isso inclui o uso adequado de cores, contrastes, fontes legíveis, e a implementação de navegação por teclado e leitores de tela. Vamos explorar como aplicar as melhores práticas de acessibilidade para garantir que seu site seja inclusivo e funcional para todos.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    
+      <!-- Post 7 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>SEO para design responsivo: O que você precisa saber</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>O design responsivo impacta diretamente o SEO do seu site. A otimização para dispositivos móveis é um dos fatores mais importantes para o ranking nos motores de busca...</p>
+        </div>
+        <div class="post-additional-content">
+          <p>Google e outros motores de busca priorizam sites que são otimizados para dispositivos móveis, considerando a experiência do usuário como um fator importante no ranqueamento. Neste post, vamos discutir como o design responsivo contribui para melhorar a visibilidade do seu site nos resultados de pesquisa e aumentar o tráfego orgânico.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    
+      <!-- Post 8 -->
+      <div class="post">
+        <div class="post-header">
+          <h2>Design responsivo para e-commerce: O que você precisa saber</h2>
+          <p>Por Felipe Cardoso Vargas - 14 Jan 2025</p>
+        </div>
+        <div class="post-content">
+          <p>Em um mundo cada vez mais móvel, os sites de e-commerce precisam ser projetados para oferecer uma experiência de compra perfeita em qualquer dispositivo...</p>
+        </div>
+        <div class="post-additional-content">
+          <p>O design responsivo é fundamental para e-commerces, pois assegura que os usuários tenham uma experiência de navegação consistente, independentemente do dispositivo. Neste post, discutimos como o design responsivo pode melhorar as taxas de conversão e aumentar as vendas, adaptando seu site para otimizar a experiência de compra em smartphones, tablets e desktops.</p>
+        </div>
+        <div class="post-footer">
+          <button onclick="toggleContent(this)">Leia mais</button>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!-- Seção Contato -->
+  <section id="contato" style="padding: 2rem 2rem; background-color: #dfe6e9; border-radius: 8px;">
+    <h2>Contato</h2>
+    <p>Gostou do meu conteúdo? Entre em contato comigo para colaborações ou dúvidas!</p>
+    <ul>
+      <li><b>Email:</b> <a href="mailto:felipecardosovargas1@gmail.com">felipecardosovargas1@gmail.com</a></li>
+      <li><b>GitHub:</b> <a href="https://github.com/Felipecardosovargas" target="_blank" rel="noopener noreferrer">https://github.com/Felipecardosovargas</a></li>
+      <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/felipe-cardoso-vargas" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/felipe-cardoso-vargas</a></li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy; 2025. Felipe Cardoso Vargas. Todos os direitos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  padding: 1.25rem; /* 20px -> 1.25rem */
+  margin: 0 auto; /* Centralizar o conteúdo */
+  max-width: 90%; /* Limitar a largura em telas pequenas */
+  margin-bottom: 60px; /* Adicionando um espaço para o footer não grudar no conteúdo */
+}
+
+/* Estilos para o Header */
+header {
+  background-color: #642C9D;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 10px; /* Arredondando as bordas do header */
+  margin-bottom: 2rem; /* Adicionando espaçamento abaixo do header */
+}
+
+/* Container do Header */
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Título do Header */
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Estilos para o Menu de Navegação */
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Estilos para os itens do Menu de Navegação */
+header nav ul li {
+  margin-left: 1.5rem;
+}
+
+header nav ul li:first-child {
+  margin-left: 0;
+}
+
+/* Estilos para os links de Navegação */
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Arredondando as bordas dos links */
+}
+
+/* Efeito de Hover nos links */
+header nav ul li a:hover {
+  background-color: #444;
+  border-radius: 5px; /* Garantindo que o hover também tenha bordas arredondadas */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  header nav ul li a {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Botão de Menu (hambúrguer) */
+.menu-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Esconder o menu em telas pequenas */
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+@media (max-width: 800px) and (min-width: 375px) {
+  /* Estilização da estrutura do header */
+  header .container {
+    display: flex;
+    justify-content: space-between; /* Mantém o botão e o título em lados opostos */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-direction: row; /* Garante que os elementos fiquem na mesma linha */
+  }
+
+  /* O menu estará escondido por padrão */
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #642C9D;
+    position: absolute;
+    top: 100%; /* Abaixo do header */
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    border-radius: 0 0 10px 10px;
+  }
+
+  /* Mostra o menu quando ativado */
+  nav .menu.show {
+    display: flex;
+  }
+
+  /* Ajuste do botão hambúrguer */
+  .menu-toggle {
+    display: block; /* Mostra o botão em telas pequenas */
+  }
+
+  /* Itens do menu em mobile */
+  nav .menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  nav .menu li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav .menu li a:hover {
+    background-color: #444;
+  }
+}
+
+@media (min-width: 93.75rem) { /* 1500px -> 93.75rem */
+  body {
+    margin-left: 30rem; /* 60px -> 3.75rem */
+    margin-right: 30rem; /* 60px -> 3.75rem */
+    max-width: calc(100% - 7.5rem); /* Ajusta a largura para compensar as margens de 60px (3.75rem) */
+  }
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 70%; /* Garantir que a imagem não ultrapasse a largura da tela */
+  margin-bottom: 1.5625rem; /* 25px -> 1.5625rem */
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* 4px 6px -> 0.25rem 0.375rem */
+  border-radius: 12px;
+}
+
+#home {
+  margin-bottom: 1.5625rem; /* 25px -> 1.5625rem */
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* 300px -> 18.75rem */
+  gap: 1.25rem; /* 20px -> 1.25rem */
+  margin-bottom: 1rem;
+}
+
+.post {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem; /* 8px -> 0.5rem */
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-header {
+  padding: 1rem; /* 16px -> 1rem */
+  border-bottom: 1px solid #ddd;
+}
+
+.post-header h2 {
+  font-size: 1.5rem; /* 24px -> 1.5rem */
+  color: #642C9D;
+  margin-bottom: 0.5rem; /* 8px -> 0.5rem */
+}
+
+.post-header p {
+  font-size: 0.875rem; /* 14px -> 0.875rem */
+  color: #666;
+}
+
+.post-content {
+  padding: 1rem; /* 16px -> 1rem */
+}
+
+.post-content p {
+  font-size: 1rem; /* 16px -> 1rem */
+  color: #555;
+}
+
+.post-additional-content {
+  padding: 1rem; /* 16px -> 1rem */
+  display: none; /* Ocultar conteúdo adicional inicialmente */
+  font-style: italic;
+  color: #444;
+}
+
+.post-footer {
+  padding: 1rem; /* 16px -> 1rem */
+  border-top: 1px solid #ddd;
+  text-align: right;
+  background-color: #f4f4f4;
+}
+
+.post-footer button {
+  background: none;
+  border: none;
+  color: #642C9D;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post-footer button:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 48rem) { /* 768px -> 48rem */
+  h1 {
+    font-size: 1.125rem; /* 18px -> 1.125rem */
+  }
+
+  .post-header h2 {
+    font-size: 1.075rem; /* 17px -> 1.075rem */
+  }
+
+  .blog-container {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Colunas menores para telas pequenas */
+    margin-bottom: 1rem;
+  }
+}
+
+/* Inicialmente o conteúdo adicional é escondido */
+.post-additional-content {
+  height: 0; /* Define a altura inicial como 0 para ocultar */
+  overflow: hidden;
+  transition: height 0.5s ease-out; /* Transição suave para altura */
+  display: block; /* Mantém o conteúdo no fluxo do layout */
+}
+
+/* Quando o conteúdo for mostrado */
+.post-additional-content.show {
+  height: auto; /* Permite que o conteúdo expanda naturalmente */
+}
+
+/* Quando o conteúdo for mostrado */
+.post-additional-content.show {
+  max-height: 500px; /* Ajuste de altura máxima conforme o conteúdo */
+}
+
+#contato h2 {
+  font-size: 2rem;
+  color: #2d3436; /* Cor do título */
+  margin-bottom: 1rem;
+}
+
+#contato p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#contato ul {
+  list-style-type: none; /* Remover marcadores */
+  padding: 1rem;
+  margin: 0;
+}
+
+#contato ul li {
+  margin: 0.5rem 0;
+}
+
+#contato ul li a {
+  text-decoration: none; /* Remover sublinhado */
+  color: #0984e3; /* Azul destacado */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#contato ul li a:hover {
+  color: #74b9ff; /* Azul claro ao passar o mouse */
+}
+
+footer {
+  background-color: #642C9D;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Garantir que o footer ocupe toda a largura da tela */
+  width: 100%;
+  margin: 0; /* Remover qualquer margem indesejada */
+  margin-top: 50px; /* Aumentar a distância do footer em relação ao conteúdo */
+  box-sizing: border-box; /* Garantir que o padding e a largura estejam bem ajustados */
+}
+
