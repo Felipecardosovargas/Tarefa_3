@@ -6,8 +6,6 @@ Este é um projeto básico de desenvolvimento web criado para treinar o uso de *
 
 O projeto faz parte do programa de capacitação **3035Teach** da **3035 Tech**, que ajuda participantes a desenvolver habilidades em design e organização de páginas web.
 
-Caso queira acessá-lo, clique aqui.
-
 Caso queira acessá-lo, clique [aqui](https://felipecardosovargas.github.io/Tarefa_3/).
 
 ---
