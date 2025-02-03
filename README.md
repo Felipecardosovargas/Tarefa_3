@@ -39,7 +39,7 @@ O layout do blog contém as seguintes seções:
 A estrutura do projeto segue uma organização simples para facilitar a navegação:
 
 ```
-Blog_Basico/
+Tarefa_3/
 │
 ├── index.html         # Página principal contendo o layout do blog
 ├── css/
